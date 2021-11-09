@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	margin: 1% 13%;
+}
+
+.twitter-nav {
+	background-color: rgb(35, 47, 214);
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.twitter-nav a {
+	color: #f2f2f2;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 2px 2px 4px #000000;
+	display: flex;
+	margin: 0% 1% 0% 0%;
+	
+}
+
+.ofek-twitter {
+	font-size: 1.5em;
+	font-weight: bold;
+	display: flex;
+	flex-grow: 8;
+	justify-content: flex-start;
+}
+
+.links {
+	font-size: 1em;
+	list-style-type: none;
+	margin: 0;
+	display: flex;
+	justify-content: space-evenly;
+	flex-grow: 1;
+}
+
+.link {
+	display: flex;
+	align-items: center;
+	white-space: nowrap;
+}
+
+.link:hover {
+	background-color: #ddd;
+}
+
+.users-container {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+}
+
+.find-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	flex-grow: 4;
+	padding: 0% 4% 4% 0%;
+	margin-right: 8%;
+}
+
+.followers-container {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	border: 1vh solid #dfdfdf;
+	border-radius: 3px;
+	flex-grow: 1;
+	text-align: center;
+	padding-bottom: 1%;
+}
+
+/* Change the color of links on hover */
+.twitter-nav a:hover {
+	background-color: #ddd;
+}
+
+.ofek-image {
+	width: 2em;
+}
+
+.follower {
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: column nowrap;
+	align-items: center;
+	border: 0.7vh solid #dfdfdf;
+	text-align: center;
+	border-radius: 3px;
+	list-style-type: none;
+	margin: 1%;
+	padding: 3% 4%;
+	text-align: center;
+	width: 7em;
+	height: 10em;
+}
+
+.follower label {
+	padding-top: 15%;
+}
+
+.follower img {
+	width: 4em;
+	padding-bottom: 4%;
+}
