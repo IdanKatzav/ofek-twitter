@@ -3,87 +3,96 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.content {
+button {
+	cursor: pointer;
+}
+
+#users-page {
 	display: flex;
-	flex-flow: column nowrap;
+	flex-direction: column;
 	justify-content: space-between;
-	margin: 1% 13%;
+	margin-top: 1%; 
+	margin-bottom: 1%; 
+	margin-left: 8%;
+	margin-right: 8%;
 }
 
-.twitter-nav {
-	background-color: rgb(35, 47, 214);
+.twitter-navbar {
+	background-color: #0000FF;
 	display: flex;
-	flex-wrap: nowrap;
 }
 
-.twitter-nav a {
-	color: #f2f2f2;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: 2px 2px 4px #000000;
-	display: flex;
-	margin: 0% 1% 0% 0%;
-	
-}
 
 .ofek-twitter {
 	font-size: 1.5em;
-	font-weight: bold;
 	display: flex;
 	flex-grow: 8;
-	justify-content: flex-start;
 }
 
-.links {
+.navbar-buttons {
 	font-size: 1em;
-	list-style-type: none;
 	margin: 0;
 	display: flex;
 	justify-content: space-evenly;
 	flex-grow: 1;
 }
 
-.link {
+.navbar-button {
 	display: flex;
 	align-items: center;
 	white-space: nowrap;
+	color: #f2f2f2;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
+	text-decoration: none;
+	margin: 0%;
+	margin-right: 1%;
+	cursor: pointer;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
 }
 
-.link:hover {
+.navbar-button:hover {
 	background-color: #ddd;
 }
 
-.users-container {
+.navbar-buttons .navbar-button {
+	padding-left: 4%;
+	padding-right: 4%;
+}
+
+#users {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-evenly;
 }
 
-.find-container {
+#followers-container {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: flex-start;
-	flex-grow: 4;
-	padding: 0% 4% 4% 0%;
+	flex-grow: 5;
+	padding-left: 0%;
+	padding-right: 4%;
+	padding-top: 0%;
+	padding-bottom: 4%;
 	margin-right: 8%;
 }
 
-.followers-container {
+#followees-container {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: center;
+	align-self: flex-start;
 	width: 30%;
-	border: 1vh solid #dfdfdf;
+	border-width: 1vh ;
+	border-style: solid;
+	border-color: #dfdfdf;
 	border-radius: 3px;
 	flex-grow: 1;
 	text-align: center;
 	padding-bottom: 1%;
-}
-
-/* Change the color of links on hover */
-.twitter-nav a:hover {
-	background-color: #ddd;
 }
 
 .ofek-image {
@@ -92,25 +101,32 @@ body {
 
 .follower {
 	display: flex;
-	justify-content: space-evenly;
-	flex-flow: column nowrap;
+	flex-direction: column;
 	align-items: center;
-	border: 0.7vh solid #dfdfdf;
+	border-width: 0.7vh ;
+	border-style: solid;
+	border-color: #dfdfdf;
 	text-align: center;
 	border-radius: 3px;
 	list-style-type: none;
 	margin: 1%;
 	padding: 3% 4%;
 	text-align: center;
-	width: 7em;
-	height: 10em;
+	width: 5.5em;
+	height: 9em;
 }
 
-.follower label {
+.follower:hover {
+	border-width: 0.7vh ;
+	border-style: solid;
+	border-color: #b6b3b3;
+}
+.follower-name {
 	padding-top: 15%;
+	white-space: nowrap;
 }
 
-.follower img {
-	width: 4em;
+.follower-image {
+	width: 3.5em;
 	padding-bottom: 4%;
 }
